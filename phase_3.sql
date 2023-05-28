@@ -1,0 +1,82 @@
+INSERT INTO dbo.Customers VALUES('1234567895','Mahdi','Dereement','05-608-165','Macintosh','Svfsdv','Mess')
+INSERT INTO dbo.Customers VALUES('9834567895','AKhdj','jfnement','85-668-115','Entosh','Psffv','Rfss')
+INSERT INTO dbo.Customers VALUES('8964567895','Rehdb','Dupdfment','29-808-805','Mtgrdnt','omnvfsdv','lopss')
+INSERT INTO dbo.Customers VALUES('896367895','Myuhdv','Kodcent','78-638-635','Mxxintosh','Sxxesj','Qopss')
+INSERT INTO dbo.Customers VALUES('193463295','kohff','Bbbement','63-608-165','Oammtosh','Uefsdv','nuss')
+INSERT INTO dbo.Customers VALUES('225667895','Myhxx','gergrnt','09-208-122','Nrgereh','Srfrdv','Afsfs')
+INSERT INTO dbo.Customers VALUES('6932567895','Resdi','Dmkdnt','75-618-765','Oppintosh','Xfcssdv','ddess')
+INSERT INTO dbo.Customers VALUES('7412589633','lpahdn','Xsefement','85-928-125','Blptos','Bgrdv','ljkhs')
+INSERT INTO dbo.Customers VALUES('2589567895','Tuodi','AGRnt','20-606-165','Aqrtosh','Sfjfv','Rsess')
+INSERT INTO dbo.Customers VALUES('2365967895','Uds','DerDsnt','02-698-161','Mdgfntosh','Shjsdv','Kfss')
+
+/********************************/
+INSERT INTO dbo.Suppliers(Suppliers_Name,Manager_Name,StartDate,EndDate,Province,City,Street) 
+VALUES('Kodcent','Dmkdnt','2022/10/1','2023/10/1','Mdgfntosh','Shjsdv','Kfss')
+INSERT INTO dbo.Suppliers(Suppliers_Name,Manager_Name,StartDate,EndDate,Province,City,Street) 
+VALUES('mahdi','revfd','2022/5/10','2023/1/1','Aqrtosh','Lhjsdv','nuss')
+INSERT INTO dbo.Suppliers(Suppliers_Name,Manager_Name,StartDate,EndDate,Province,City,Street) 
+VALUES('Poldi','Fkofd','2032/5/10','2043/5/9','Fdeao','Podm','Qsdve')
+INSERT INTO dbo.Suppliers(Suppliers_Name,Manager_Name,StartDate,EndDate,Province,City,Street) 
+VALUES('Ahmad','Pldfd','2002/7/12','2022/10/10','Fewth','Plsjsb','Hswe')
+/**************************************/
+INSERT INTO dbo.Brand VALUES('206')
+INSERT INTO dbo.Brand VALUES('Dena')
+/********************************/
+INSERT INTO dbo.Model VALUES('tip2','206')
+INSERT INTO dbo.Model VALUES('tip3','206')
+INSERT INTO dbo.Model VALUES('model1','Dena')
+INSERT INTO dbo.Model VALUES('model2','Dena')
+/****************************************/
+INSERT INTO dbo.Color VALUES('red')
+INSERT INTO dbo.Color VALUES('gray')
+/******************************************/
+INSERT INTO dbo.Options VALUES('1','automatic','red')
+INSERT INTO dbo.Options VALUES('2','automatic','gray')
+INSERT INTO dbo.Options VALUES('3','manual','red')
+INSERT INTO dbo.Options VALUES('4','manual','gray')
+/****************************************/
+INSERT INTO dbo.SpareParts VALUES('lastic',9800,10,1,'193463295')
+INSERT INTO dbo.SpareParts VALUES('podad',2000,5,1,'6932567895')
+INSERT INTO dbo.SpareParts VALUES('milleh',800,65,2,'2589567895')
+INSERT INTO dbo.SpareParts VALUES('lamp',6300,35,2,'9834567895')
+INSERT INTO dbo.SpareParts VALUES('noor',2300,63,3,'2589567895')
+INSERT INTO dbo.SpareParts VALUES('plds',2014,23,3,'8964567895')
+INSERT INTO dbo.SpareParts VALUES('lose',5600,20,4,'1234567895')
+INSERT INTO dbo.SpareParts VALUES('mios',2014,23,4,'2365967895')
+INSERT INTO dbo.SpareParts VALUES('plkj',2014,23,5,null)
+/****************************************/
+INSERT INTO dbo.Kodro(purchase_date,FK_Customer_NationalCode,FK_Brand_Id,FK_Model_Id,FK_Options_Id) 
+VALUES('2020/5/9','1234567895','206','tip2',1)
+INSERT INTO dbo.Kodro(purchase_date,FK_Customer_NationalCode,FK_Brand_Id,FK_Model_Id,FK_Options_Id) 
+VALUES('2021/15/10','9834567895','Dena','model1',1)
+INSERT INTO dbo.Kodro(purchase_date,FK_Customer_NationalCode,FK_Brand_Id,FK_Model_Id,FK_Options_Id) 
+VALUES('2022/3/15','896367895','206','tip3',3)
+INSERT INTO dbo.Kodro(purchase_date,FK_Customer_NationalCode,FK_Brand_Id,FK_Model_Id,FK_Options_Id) 
+VALUES('2026/4/15','193463295','Dena','model1',2)
+INSERT INTO dbo.Kodro(purchase_date,FK_Customer_NationalCode,FK_Brand_Id,FK_Model_Id,FK_Options_Id) 
+VALUES('2005/3/25','2365967895','Dena','model2',3)
+INSERT INTO dbo.Kodro(purchase_date,FK_Customer_NationalCode,FK_Brand_Id,FK_Model_Id,FK_Options_Id) 
+VALUES('2015/9/21','2589567895','206','tip2',1)
+INSERT INTO dbo.Kodro(purchase_date,FK_Customer_NationalCode,FK_Brand_Id,FK_Model_Id,FK_Options_Id) 
+VALUES('2012/10/21','7412589633','206','tip3',4)
+INSERT INTO dbo.Kodro(purchase_date,FK_Customer_NationalCode,FK_Brand_Id,FK_Model_Id,FK_Options_Id) 
+VALUES('2016/11/26','6932567895','Dena','model2',2)
+INSERT INTO dbo.Kodro(purchase_date,FK_Customer_NationalCode,FK_Brand_Id,FK_Model_Id,FK_Options_Id) 
+VALUES('2020/4/3','225667895','Dena','model1',1)
+INSERT INTO dbo.Kodro(purchase_date,FK_Customer_NationalCode,FK_Brand_Id,FK_Model_Id,FK_Options_Id) 
+VALUES('2120/4/3','896367895','Dena','model2',4)
+INSERT INTO dbo.Kodro(purchase_date,FK_Customer_NationalCode,FK_Brand_Id,FK_Model_Id,FK_Options_Id) 
+VALUES('2023/2/30','7412589633','206','tip2',4)
+INSERT INTO dbo.Kodro(purchase_date,FK_Customer_NationalCode,FK_Brand_Id,FK_Model_Id,FK_Options_Id) 
+VALUES('2023/2/30','2589567895','Dena','model2',4)
+/***/
+INSERT INTO dbo.Kodro(purchase_date,FK_Customer_NationalCode,FK_Brand_Id,FK_Model_Id,FK_Options_Id) 
+VALUES('2028/2/30',null ,'Dena','model2',3)
+INSERT INTO dbo.Kodro(purchase_date,FK_Customer_NationalCode,FK_Brand_Id,FK_Model_Id,FK_Options_Id) 
+VALUES('2002/2/36',null ,'206','tip2',1)
+/**********************************************/
+
+
+
+
+
